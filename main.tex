@@ -1,0 +1,66 @@
+\documentclass[a4paper,xelatex,ja=standard,hiresbb,12pt]{bxjsarticle}
+%各節を個別ファイルにする用
+\usepackage{docmute} 
+%設定ファイルは別に用意すると良い
+\input{settings.tex}
+
+%ページ番号調節
+\setcounter{page}{-3}
+
+\begin{document}
+%%%%%表紙%%%%%
+\begin{flushleft}
+\large{国際信州大学工学部　卒業論文}
+\end{flushleft}
+\vspace{150pt}
+\begin{center}
+        
+\LARGE{hogeに向けたhoge導入に伴うhogeの\\hoge分析}
+\vspace{130pt}
+        
+\Large{機械知能・航空工学科　hoge研究室} 
+\vspace{15pt}
+        
+
+\Large{学籍番号　名前} \\ 
+\vspace{15pt}
+\large{(令和2年3月)}
+        
+\thispagestyle{empty}	%ページ番号非表示
+        
+\end{center}
+%%%%%%%%%%%%%
+%表紙の裏は白紙にしたい
+\newpage
+\mbox{}
+\thispagestyle{empty}
+\newpage
+%%%%%目次%%%%%
+\tableofcontents
+\thispagestyle{empty}	%ページ番号非表示
+%%%%%%%%%%%%%
+%目次の裏も白紙にしたい
+\newpage
+\mbox{}
+\thispagestyle{empty}
+\newpage
+
+%%%%%本文%%%%%
+\input{sec1}
+\clearpage
+\input{sec2}
+\clearpage
+\input{sec3}
+\clearpage
+\input{sec4}
+\clearpage
+\input{sec5}
+\clearpage
+
+%参考文献
+\bibliography{sotsuron} 
+\newpage
+%これは謝辞
+\input{sec6}
+
+\end{document}
