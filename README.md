@@ -1,2 +1,2 @@
 # LaTeXTemplate
-卒業論文用LaTeXテンプレート
+XeLaTeXでコンパイルする卒業論文用のLaTeXテンプレートです。
